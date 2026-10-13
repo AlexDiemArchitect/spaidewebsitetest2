@@ -1,25 +1,13 @@
 # SPAiDE — Website (flache Struktur)
 
-Alle Dateien liegen bewusst ohne Unterordner nebeneinander — passend zu
-Deinem bestehenden Repo-Aufbau. Kein Build-Tool nötig.
+Alle Dateien liegen ohne Unterordner nebeneinander. Reine statische Seite, kein Build nötig:
+einfach alle Dateien auf den Host kopieren (index.html muss im Hauptordner liegen).
 
-## So aktualisierst Du Dein bestehendes GitHub-Repo
+## Sprachen
+Die Startseite zeigt immer Englisch; Deutsch lässt sich über den Schalter oben wählen.
+Englisch steht in index.html, Deutsch in i18n.js. Impressum und Datenschutz sind nur auf Deutsch.
 
-1. Gehe in Dein Repo (main-Branch, Hauptordner)
-2. Lösche die alte `index.html` und `styles.css` (Datei öffnen →
-   Papierkorb-Symbol oben rechts → "Commit changes")
-3. Klicke "Add file" → "Upload files"
-4. Ziehe **alle Dateien aus diesem Ordner** hinein (index.html, styles.css,
-   main.js, alle .jpg/.png-Dateien) — keine Unterordner nötig
-5. Unten "Commit changes" klicken
-6. Ca. 1 Minute warten, dann Seite mit hartem Reload neu laden
-   (Strg/Cmd+Shift+R)
-
-## Was sich in dieser Version geändert hat
-
-- Logo im Hero-Bereich deutlich größer
-- Kennzahlen-Leiste (>18kW, 400V/32A, ...) aus dem Hero entfernt —
-  steht weiterhin ausführlich bei "The Product"
-- Produktfoto-Ausschnitt korrigiert (Pentacube war vorher am Rand
-  abgeschnitten)
-- Neue Grafik "Europe: The Digital Bottleneck" in der Problem-Sektion
+## Vor dem Veröffentlichen
+In datenschutz.html Abschnitt 3 (Hosting) sind zwei Stellen gelb markiert (class="todo"):
+Name/Anschrift des Hosters und der Hinweis auf den Auftragsverarbeitungsvertrag.
+Nach dem Eintragen die Markierung entfernen (<span class="todo">...</span> durch reinen Text ersetzen).

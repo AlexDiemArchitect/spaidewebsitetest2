@@ -32,3 +32,10 @@ faqItems.forEach(item => {
 
   window.addEventListener('resize', () => { if (item.classList.contains('open')) setHeight(); });
 });
+
+// Nach einem Sprachwechsel die Höhe des geöffneten FAQ-Eintrags neu berechnen
+document.addEventListener('langchange', () => {
+  document.querySelectorAll('.faq-item.open .faq-a').forEach(a => {
+    a.style.maxHeight = a.scrollHeight + 'px';
+  });
+});
